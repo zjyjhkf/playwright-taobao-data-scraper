@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "playwright-mcp",
+        "--browser",
+        "msedge",
+        "--user-data-dir",
+        "C:/Users/<你的用户名>/.taobao-edge-profile",
+        "--caps",
+        "vision",
+        "--output-dir",
+        "E:/你的项目路径/output",
+        "--viewport-size",
+        "1280x850"
+      ]
+    }
+  }
+}

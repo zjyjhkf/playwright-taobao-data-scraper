@@ -1,0 +1,28 @@
+{
+  "name": "taobao-public-monitor",
+  "version": "3.1.0",
+  "type": "module",
+  "description": "淘宝/天猫商品公开信息监控：商品页快照、搜索排行、评论抓取与结构化洞察。纯 Playwright 0-Token 运行，可选 Claude Code + MCP 做 AI 调优。",
+  "scripts": {
+    "login": "node login-helper.mjs",
+    "monitor": "node taobao-monitor.mjs",
+    "report": "node taobao-report.mjs",
+    "demo": "node example-task.mjs"
+  },
+  "keywords": [
+    "taobao",
+    "tmall",
+    "playwright",
+    "scraper",
+    "monitor",
+    "reviews",
+    "browser-automation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.62.0"
+  }
+}

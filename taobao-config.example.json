@@ -1,0 +1,37 @@
+{
+  "profileDir": "~/.taobao-edge-profile",
+  "browserChannel": "msedge",
+  "products": [
+    {
+      "name": "示例商品（改成你要监控的商品名，会作为数据文件夹名）",
+      "url": "https://detail.tmall.com/item.htm?id=854970079880"
+    }
+  ],
+  "rankings": [
+    {
+      "name": "气压裤",
+      "keyword": "气压裤",
+      "topN": 20,
+      "sort": "sale-desc"
+    }
+  ],
+  "dataDir": "taobao-data",
+  "headless": false,
+  "waitAfterLoadMs": 3500,
+  "minDelayMs": 2500,
+  "maxDelayMs": 6000,
+  "reviews": {
+    "enabled": true,
+    "maxTotal": 60,
+    "scrollRounds": 5,
+    "filters": ["图片", "追评", "差评"],
+    "minLen": 8,
+    "topHighLike": 8,
+    "topTerms": 12,
+    "terms": {
+      "positive": ["舒服", "放松", "有效", "性价比", "质量好"],
+      "negative": ["漏气", "噪音", "太硬", "退货", "客服差"]
+    }
+  },
+  "_说明": "使用：复制本文件为 taobao-config.json 后按需修改。profileDir=浏览器登录态目录（~ 自动展开为用户主目录）；browserChannel=msedge 或 chrome；reviews.terms 为评论情感词典，可按你类目增减；风控请保持低频+有头。"
+}

@@ -1,0 +1,17 @@
+# ===== 依赖 =====
+node_modules/
+
+# ===== 个人配置（含本机路径/个人商品链接，勿提交）=====
+taobao-config.json
+.mcp.json
+
+# ===== 采集数据与产物（个人自用，含公开页快照/截图/CSV，体积大且属个人数据）=====
+taobao-data/
+output/
+*.log
+
+# ===== 系统 / 编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+*.local.json
